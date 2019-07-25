@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## My Burger Builder
 
 A Mobile-First Web Application developed using <br>React(16.8.6), React-Router(5.0.1), Redux(4.0.4) and Firebase
