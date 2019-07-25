@@ -1,0 +1,21 @@
+.ContactData {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  /* box-shadow: 0 2px 3px #ccc; */
+  /* border: 2px solid #eee; */
+  /* background-image: linear-gradient(rgb(241, 179, 179),#ce8e2f); */
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.ValidationMessage{
+  color:red;
+}
+
+
+@media (min-width: 600px) {
+  .ContactData {
+    width: 500px;
+  }
+}

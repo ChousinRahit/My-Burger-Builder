@@ -1,0 +1,141 @@
+.Order {
+  width: 70%;
+  margin: 20px auto;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+
+  /* border: 1px solid #eee; */
+  /* box-shadow: 0 2px 3px #ccc; */
+  /* border-radius: 20px;
+  color: rgb(27, 27, 27);
+  padding: 10px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  font-size: 1rem;
+  background-color: #D4E09B; */
+  /* background-image: linear-gradient(to right, rgba(10, 125, 202, 0.815),  #cf8f2e); */
+}
+
+.Order p {
+  margin: 0;
+}
+.ingList {
+  text-align: center;
+}
+
+.ingList span:hover {
+  background-image: linear-gradient(
+    #00000000,
+    #f5be6c2d,
+    #f5be6c2d,
+    #f5be6c2d,
+    #f5be6c2d,
+    #f5be6c2d,
+    #00000000
+  );
+  background-position: 50%;
+  border-radius: 20%;
+  outline: none;
+}
+
+.ingDetails {
+  width: 90%;
+  margin: 30px auto;
+}
+.ingDetails h4,
+h5 {
+  color: rgba(0, 0, 0, 0.5);
+}
+.OnlyBigScreen {
+  opacity: 0.5;
+}
+
+.OredrHeader {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  font-weight: bold;
+}
+
+.Lists {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  border-bottom: 1px solid #dee2e6;
+  margin-right: -0.625rem;
+  margin-bottom: -0.75rem;
+  margin-left: -0.625rem;
+  border-bottom: 0;
+}
+
+.Lists li {
+  color: rgba(0, 0, 0, 0.5);
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.Lists li:hover,
+.Lists li:active {
+  background-color: #ffdfaf86;
+}
+
+.Active {
+  background-color: #ce8e2e86;
+}
+
+.Order span {
+  color: rgb(53, 53, 53);
+}
+.Ing {
+  color: rgb(0, 0, 0) !important;
+  text-transform: capitalize;
+  display: inline-flex;
+  margin: 0 2px;
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+  border-radius: 20%;
+  /* background-image: linear-gradient(to right, rgba(4, 83, 136, 0.384),  #cf8f2e73); */
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.Ing:after {
+  content: "";
+  background: #fffefe;
+  display: inline-flex;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  border-radius: 50%;
+  margin-left: -50px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.9s;
+}
+
+.Ing:hover:after {
+  padding: 0%;
+  margin: 0px;
+
+  opacity: 1;
+  transition: 0s;
+}
+
+@media (max-width: 600px) {
+  .OnlyBigScreen {
+    display: none;
+  }
+}

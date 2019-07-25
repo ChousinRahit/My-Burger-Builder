@@ -1,0 +1,64 @@
+.SideDrawer {
+  position: fixed;
+  width: 220px;
+  max-width: 70%;
+  height: 150vh;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  background-color: rgb(236, 236, 236);
+  padding: 32px 16px;
+  box-sizing: border-box;
+  transition: transform 0.5s ease-out;
+}
+
+.Nav:active {
+  background-color: #000;
+}
+
+@media (min-width: 500px) {
+  .SideDrawer {
+    display: none;
+  }
+}
+
+.Open {
+  transform: translateX(0);
+}
+
+.Close {
+  transform: translateX(-200%);
+}
+
+.LSContainer {
+  width: 90%;
+  position: relative;
+}
+
+.Sclose {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 32px;
+  height: 30px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.Sclose:hover {
+  opacity: 1;
+}
+.Sclose:before,
+.Sclose:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.Sclose:before {
+  transform: rotate(45deg);
+}
+.Sclose:after {
+  transform: rotate(-45deg);
+}

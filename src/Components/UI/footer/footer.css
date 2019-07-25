@@ -1,0 +1,74 @@
+.Footer {
+  /* background-color: #ce8e2e; */
+  /* background-image: url(../../../Assets/Images/grains.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 250%;
+  background-position-y: 50%; */
+  border-radius: 100% / 30% 30% 0% 0%;
+  background-color: #703b09;
+  box-shadow: 3px 150px 44px 200px #ce8e2e;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  z-index: 90;
+  padding: 25px 30px;
+  margin: 0px;
+  margin-top: 100px;
+  color: rgb(161, 161, 161);
+}
+.FooterLeft {
+  display: inline-flex;
+  margin: 0px;
+}
+.FooterLeft img {
+  width: 3em;
+  min-height: 3em;
+  max-height: 4em;
+  margin: 0;
+}
+.Footer hr {
+  height: 1px;
+  color: #474747;
+  background-color: #636363;
+  border: none;
+}
+.FooterRight {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.FooterRight a {
+  display: inline-block;
+  width: 40px;
+  height: 35px;
+  background-color: #e69d306b;
+  border-radius: 2px;
+
+  font-size: 25px;
+  color: #ffffffd7;
+  text-align: center;
+  line-height: 35px;
+
+  margin-left: 7px;
+}
+
+.FooterRight a:nth-child(1):hover {
+  color: #38a1f3;
+}
+.FooterRight a:nth-child(2):hover {
+  color: #0077b5;
+}
+.FooterRight a:nth-child(3):hover {
+  color: #000;
+}
+
+/* @media (max-width: 600px) {
+  .FooterLeft img {
+    width: 15vw;
+    min-height: 8vh;
+    max-height: 10vh;
+    margin: 0;
+  }
+} */

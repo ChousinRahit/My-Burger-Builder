@@ -1,0 +1,82 @@
+.Button {
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px 30px;
+  margin: 10px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  /* transition: 0.1s ease-in; */
+}
+
+/* .Button:first-of-type {
+  margin-left: 0;
+  padding-left: 0;
+} */
+
+.Button:focus {
+  outline: none;
+}
+
+.Button:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  border-radius: 50%;
+  margin-left: -50px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.Button:active:after {
+  padding: 0%;
+  margin: 0px;
+  
+  opacity: 1;
+  transition: 0s;
+}
+
+.Success {
+  background-color: #d69a3f;
+  color: #fff;
+}
+
+.Danger {
+  background-color: #e9a032be;
+  color: #fff;
+}
+
+.Less {
+  background-color: #55393963;
+  color: #fff;
+}
+
+.Switch{
+  background-color: transparent;
+  color: #20065cbe;
+}
+
+.Success:hover,
+.Danger:hover,
+.Less:hover {
+  color: #e9a032;
+  background-color: #fff;
+  box-shadow: inset 0px 0px 20px #ce8e2e;
+}
+
+.Button:disabled {
+  cursor: not-allowed;
+  color: #ccc;
+}
